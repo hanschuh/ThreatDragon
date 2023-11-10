@@ -1026,6 +1026,9 @@
               "threats": []
             },
             "id": "dba605d7-035b-4465-b676-093af2427847",
+            "labels": [
+              "Weiterleitung"
+            ],
             "source": {
               "x": 810,
               "y": 440
@@ -1038,9 +1041,6 @@
                 "x": 630,
                 "y": 310
               }
-            ],
-            "labels": [
-              "Weiterleitung"
             ]
           },
           {
@@ -1075,16 +1075,16 @@
               "threats": []
             },
             "id": "f8770177-b7f8-430a-a4fe-d4e886e002aa",
+            "labels": [
+              "Daten für monatlichen Report"
+            ],
             "source": {
               "x": 493,
               "y": 28
             },
             "target": {
               "cell": "430efb76-8388-43fd-a34e-9684d9d06c3e"
-            },
-            "labels": [
-              "Daten für monatlichen Report"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1118,6 +1118,9 @@
               "threats": []
             },
             "id": "14e0fcf6-485c-485a-88ba-640ec1d5727c",
+            "labels": [
+              "Report"
+            ],
             "source": {
               "cell": "430efb76-8388-43fd-a34e-9684d9d06c3e"
             },
@@ -1129,9 +1132,6 @@
                 "x": 180,
                 "y": -100
               }
-            ],
-            "labels": [
-              "Report"
             ]
           },
           {
@@ -1166,6 +1166,9 @@
               "threats": []
             },
             "id": "9922770e-c00c-4d3e-8540-ce1e7147974e",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "38ba7ab3-09d6-49f6-88bf-f9496a281138"
             },
@@ -1177,9 +1180,6 @@
                 "x": 420,
                 "y": 150
               }
-            ],
-            "labels": [
-              "Überwacht"
             ]
           },
           {
@@ -1214,6 +1214,9 @@
               "threats": []
             },
             "id": "0b47e2af-fda1-4436-99ea-0a103ddd75b0",
+            "labels": [
+              "Überwacht"
+            ],
             "source": {
               "cell": "38ba7ab3-09d6-49f6-88bf-f9496a281138"
             },
@@ -1237,9 +1240,6 @@
                 "x": 350,
                 "y": 180
               }
-            ],
-            "labels": [
-              "Überwacht"
             ]
           },
           {
@@ -1274,6 +1274,9 @@
               "threats": []
             },
             "id": "fa6f3140-e0aa-4c6e-b5fb-a50d4d8afd2d",
+            "labels": [
+              "Report"
+            ],
             "source": {
               "cell": "38ba7ab3-09d6-49f6-88bf-f9496a281138"
             },
@@ -1301,9 +1304,6 @@
                 "x": 170,
                 "y": -60
               }
-            ],
-            "labels": [
-              "Report"
             ]
           },
           {
@@ -1572,8 +1572,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "430efb76-8388-43fd-a34e-9684d9d06c3e",
             "zIndex": 14,
+            "id": "430efb76-8388-43fd-a34e-9684d9d06c3e",
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -1610,8 +1610,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "55297d80-6a55-4015-8de4-4bd90d4cdcb8",
             "zIndex": 16,
+            "id": "55297d80-6a55-4015-8de4-4bd90d4cdcb8",
             "data": {
               "type": "tm.Actor",
               "name": "Management",
@@ -1644,8 +1644,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "38ba7ab3-09d6-49f6-88bf-f9496a281138",
             "zIndex": 17,
+            "id": "38ba7ab3-09d6-49f6-88bf-f9496a281138",
             "data": {
               "type": "tm.Flow",
               "name": "SIEM System",
@@ -1674,5 +1674,5 @@
     "diagramTop": 10,
     "threatTop": 101
   },
-  "version": "2.0.9"
+  "version": "2.1.1"
 }
