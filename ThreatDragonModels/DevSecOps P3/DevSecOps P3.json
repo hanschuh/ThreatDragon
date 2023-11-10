@@ -1643,7 +1643,7 @@
         "title": "Architekturdiagramm",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 0,
-        "diagramType": "STRIDE"
+        "diagramType": "Generic"
       }
     ],
     "reviewer": "Georg Neugebauer",
