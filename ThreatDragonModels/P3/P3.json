@@ -67,8 +67,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -83,8 +83,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false
+              "threats": [
+                {
+                  "id": "d575a3b7-86ae-4e8b-9f9d-fa1acfd36a1d",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "o\tBedrohung: Tampering. Bei dem clientseitigen Login System (Webapp oder mobile App) gibt es für den User idR mehrere Input Möglichkeiten. Hierdurch ergibt sich die Bedrohung, dass gezielte Eingaben zu Schaden führen kann und Angreifer somit Daten unbefugt verändern könnten. Eine der möglichen Eingaben können SQL Injections sein, durch die Datenbankabfragen passieren.\no\tAngriffsvektor: SQL Injection (CAPEC ID: 66)\no\tTaktik Attack-Matrix: T1190 (Exploit Public-Facing Application)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 102,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true
             }
           },
           {
@@ -111,7 +125,7 @@
             "zIndex": 3,
             "id": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c",
             "data": {
-              "name": "2-Faktor-Authe\nntifizierungsdi\nenst",
+              "name": "Data Flow",
               "description": "",
               "type": "tm.Flow",
               "isTrustBoundary": false,
@@ -259,7 +273,7 @@
             "zIndex": 9,
             "id": "166a4763-016a-486b-92df-a86adc8bab82",
             "data": {
-              "name": "AllSecure Mobile\nPhone OTT Service\nService",
+              "name": "Data Flow",
               "description": "",
               "type": "tm.Flow",
               "isTrustBoundary": false,
@@ -1389,46 +1403,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "c7df600a-2365-4295-a3f7-082d5ee1c4c3",
-            "source": {
-              "cell": "430efb76-8388-43fd-a34e-9684d9d06c3e"
-            },
-            "target": {
-              "x": 30,
-              "y": -200
-            }
-          },
-          {
             "position": {
               "x": 410,
               "y": -174
@@ -1455,17 +1429,20 @@
             "zIndex": 11,
             "id": "c2716661-ef88-48a8-8d0f-724e1923d562",
             "data": {
-              "type": "tm.Store",
-              "name": "Log-DB",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "isALog": true,
               "storesCredentials": false,
-              "isEncrypted": true,
+              "isEncrypted": false,
               "isSigned": true,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isPublicNetwork": false
             }
           },
           {
@@ -1613,14 +1590,18 @@
             "zIndex": 16,
             "id": "55297d80-6a55-4015-8de4-4bd90d4cdcb8",
             "data": {
-              "type": "tm.Actor",
-              "name": "Management",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
             }
           },
           {
@@ -1672,7 +1653,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 101
+    "threatTop": 106
   },
   "version": "2.1.1"
 }
