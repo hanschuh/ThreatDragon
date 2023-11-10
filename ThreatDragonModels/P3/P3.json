@@ -195,7 +195,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 110,
-                  "score": ""
+                  "score": "5.4 (8+3+5+7+4)"
                 }
               ],
               "hasOpenThreats": true
@@ -243,7 +243,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 111,
-                  "score": ""
+                  "score": "6,4 (7+8+6+5+6)"
                 }
               ],
               "hasOpenThreats": true,
@@ -333,7 +333,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 116,
-                  "score": ""
+                  "score": "6.2 (8+6+8+4+5)"
                 }
               ],
               "hasOpenThreats": true,
@@ -1526,7 +1526,7 @@
           {
             "position": {
               "x": 680,
-              "y": 455
+              "y": 460
             },
             "size": {
               "width": 120,
@@ -1574,7 +1574,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 109,
-                  "score": ""
+                  "score": "7.2 (7+6+6+9+8)"
                 }
               ]
             }
@@ -1665,7 +1665,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 107,
-                  "score": ""
+                  "score": "5.4 (6+5+7+4+5)"
                 }
               ],
               "isBidirectional": false,
@@ -1688,8 +1688,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1699,13 +1699,27 @@
             "id": "55297d80-6a55-4015-8de4-4bd90d4cdcb8",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Management",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "1a859ca8-f7f1-425c-b8e6-22962f208406",
+                  "title": "Social Engineering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "o\tBedrohung: Elevation of Privilege. Im Management, das monatliche Berichte zu den Daten des 2 FA Dienstes erhält, gibt es die Bedrohung der Elevation of Privilege, zum Beispiel durch Social Engineering. Ein Angreifer könnte versuchen, das Management durch manipulative soziale Techniken zu täuschen, um unbefugten Zugang zu erweiterten Berechtigungen im System zu erhalten. Erfolgreiche Angriffe könnten die Wahrnehmung von Mitarbeitern beeinflussen, um Zugriff auf vertrauliche Informationen zu erlangen. \no\tAngriffsvektor: Social Engineering (CAPEC ID: 403)\no\tTaktik Attack-Matrix: T1087 (Account Discovery)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 118,
+                  "score": "5"
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1755,7 +1769,7 @@
                   "modelType": "Generic",
                   "new": false,
                   "number": 108,
-                  "score": ""
+                  "score": "6,4 (9+2+9+9+3)"
                 }
               ],
               "isBidirectional": false,
@@ -1775,7 +1789,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 116
+    "threatTop": 118
   },
   "version": "2.1.1"
 }
