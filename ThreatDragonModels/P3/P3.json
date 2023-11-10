@@ -1459,11 +1459,13 @@
                 "text": "Telefonnummern-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1481,8 +1483,22 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "e56113c7-55cb-427a-ac06-7608eddf6231",
+                  "title": "DDoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "o\tBedrohung: Denial of service. In der Telefonnummern-DB besteht die Bedrohung des Denial of Service, zB durch einen DDoS Angriff. Hierbei versucht ein Angreifer, die Verfügbarkeit der Telefonnummern-Datenbank zu beeinträchtigen, indem er eine große Anzahl von Anfragen gleichzeitig initiiert, um die Ressourcen zu überlasten und den regulären Betrieb zu stören. So könnten Benutzer nur eingeschränkten Zugriff erhalten bzw. die Datenbank könnte komplett ausfallen.\no\tAngriffsvektor: DDoS (CAPEC ID: 469)\no\tTaktik Attack-Matrix: T0814 (Denial of Service)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 109,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1542,8 +1558,8 @@
                 "text": "Export"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1553,13 +1569,27 @@
             "id": "430efb76-8388-43fd-a34e-9684d9d06c3e",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Export",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "b4c90a32-d320-4e79-8f08-878df90ce1ef",
+                  "title": "Man in the middle",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "o\tBedrohung: Spoofing. Der Exportprozess sendet die gesammelten Daten monatlich für den Report an das Management. Hier besteht uA die Bedrohung des Spoofing durch zB einen MitM Angriff. Ein Angreifer versucht hier, sich zwischen dem Exportprozess und dem Management zu positionieren, um den Datenverkehr abzufangen oder zu manipulieren. \no\tAngriffsvektor: Man-in-the middle (CAPEC ID: 384)\no\tTaktik Attack-Matrix: T1557 (Adversary-in-the-Middle)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 107,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1618,8 +1648,8 @@
                 "text": "SIEM System"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1634,8 +1664,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "113fcd59-89aa-4a01-a9ed-2e2f1429b10d",
+                  "title": "Zero day exploit",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "o\tBedrohung: Elevation of Privilege. Das SIEM-System in unserem Fall überwacht den 2-Faktor-Authentifizierungsdienst und den OTT-Service, hierdurch besteht die Bedrohung der Elevation of Privilege, zB durch einen Zero Day Exploit. Dieser nutzt Schwachstellen aus, für die noch keine Sicherheitspatches verfügbar sind, um unautorisierten Zugriff auf das SIEM-System zu erlangen und evtl privilegierte Befugnisse zu erhalten.\no\tAngriffsvektor: Zero Day Exploit (CAPEC ID: 9)\no\tTaktik Attack-Matrix: T1068 (Exploitation for Privilege Escalation)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 108,
+                  "score": ""
+                }
+              ],
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1653,7 +1697,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 106
+    "threatTop": 109
   },
   "version": "2.1.1"
 }
