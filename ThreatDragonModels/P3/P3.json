@@ -153,8 +153,8 @@
                 "text": "Telefonnummer-\nAPI-Gateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -169,8 +169,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false
+              "threats": [
+                {
+                  "id": "aed628b7-f5f6-4529-8bce-821342472523",
+                  "title": "Exploit API key",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "o\tBedrohung: Information Disclosure. In dem Telefonnummern-API-Gateway, das nur einen statischen Schlüssel verwendet, besteht die Bedrohung der Information Disclosure durch den Exploit des API Keys. Es besteht das Risiko, dass ein Angreifer den statischen API-Schlüssel herausfindet und missbräuchlich verwendet, um auf die API zuzugreifen und sensible Informationen wie Telefonnummern offenzulegen.\no\tAngriffsvektor: Exploit API Key (CAPEC ID: 37)\no\tTaktik Attack-Matrix: T1140 (Deobfuscate/Decode Files or Information)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 110,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true
             }
           },
           {
@@ -187,8 +201,8 @@
                 "text": "Kundentelefon-\nanbieter"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -197,14 +211,28 @@
             "zIndex": 5,
             "id": "fd7303e8-29d2-4d76-bf7d-87eb619ede69",
             "data": {
-              "name": "Data Flow",
+              "name": "Kundentelefon-\nanbieter",
               "description": "",
               "type": "tm.Flow",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "2eec2260-bcb4-4be4-a673-e94d2687ae7c",
+                  "title": "Spoofing von Kundendaten",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "o\tBedrohung: Spoofing. Bei dem Kundentelefonanbieter besteht die Bedrohung des Spoofing zB durch Spoofing von Kundendaten. Bei dieser Bedrohung besteht das Risiko, dass ein Angreifer Kundendaten fälscht oder manipuliert, um sich als legitimer Kunde auszugeben und unerlaubt Zugang zu Diensten oder Informationen zu erhalten.\no\tAngriffsvektor: Spoofing von Kundendaten (CAPEC ID: 148)\no\tTaktik Attack-Matrix: T1557.003 (Adversary-in-the-Middle: DHCP Spoofing)\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 111,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1697,7 +1725,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 109
+    "threatTop": 111
   },
   "version": "2.1.1"
 }
