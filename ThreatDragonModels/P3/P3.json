@@ -1389,6 +1389,46 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "c7df600a-2365-4295-a3f7-082d5ee1c4c3",
+            "source": {
+              "cell": "430efb76-8388-43fd-a34e-9684d9d06c3e"
+            },
+            "target": {
+              "x": 30,
+              "y": -200
+            }
+          },
+          {
             "position": {
               "x": 410,
               "y": -174
@@ -1535,14 +1575,18 @@
             "id": "430efb76-8388-43fd-a34e-9684d9d06c3e",
             "zIndex": 14,
             "data": {
-              "type": "tm.Process",
-              "name": "Export",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
             }
           },
           {
@@ -1627,7 +1671,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 100
+    "threatTop": 101
   },
   "version": "2.1.1"
 }
