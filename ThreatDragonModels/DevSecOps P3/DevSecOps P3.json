@@ -1,4 +1,4 @@
-{
+d{
   "summary": {
     "title": "Bedrohungsmodell - OTT Auth",
     "owner": "Firma Allsecure",
@@ -1640,7 +1640,7 @@
           }
         ],
         "version": "2.1.1",
-        "title": "Architekturdiagramm",
+        "title": "Bedrohungsmodell - OTT Auth",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "id": 0,
         "diagramType": "Generic"
